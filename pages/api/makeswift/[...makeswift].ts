@@ -9,4 +9,6 @@ strict(
 
 export default MakeswiftApiHandler(process.env.MAKESWIFT_SITE_API_KEY, {
   runtime,
+  apiOrigin: process.env.MAKESWIFT_API_ORIGIN,
+  appOrigin: process.env.MAKESWIFT_APP_ORIGIN,
 });
